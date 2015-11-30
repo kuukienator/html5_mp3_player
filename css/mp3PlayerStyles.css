@@ -1,0 +1,230 @@
+body {
+    background-color: #e5e5e5;
+    font-family: 'Crete Round', serif;
+    margin: 0;
+    padding: 0;
+}
+/*
+* Main
+*/
+#container{
+    width: 400px;
+    height: 490px;
+    background-color: #FAFAFA;
+    margin: 100px auto 0;
+}
+
+/*
+* Album art
+*/
+#art{
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+#coverArt{
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+
+#imageOverlay{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+}
+#overlaysongname{
+    display: block;
+    font-size: 2em;
+    color: #FAFAFA;
+    font-weight: bold;
+}
+#overlayartist{
+    display: block;
+    font-size: 1.5em;
+    color: #FAFAFA;
+}
+#imageOverlayText{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*
+* Splashscreen
+*/
+#splashscreen{
+    width:200px;
+    height:200px;
+    text-align: center;
+    margin: 100px  100px;
+    display: inline-block;
+}
+
+#splashscreen>p{
+    font-size: 1.5em;
+    color: #FC8E36;
+
+}
+#splashscreen>i{
+    margin: 5px;
+    color: #FC8E36;
+}
+
+/*
+* Loading
+*/
+#loading {
+    height: 80px;
+    width: 80px;
+    margin: 160px  160px;
+    text-align: center;
+    display: inline-block;
+}
+#loading>i{
+    color: #FC8E36;
+}
+
+/*
+* Controls
+*/
+#controls{
+    height: 90px;
+    width: 400px;
+    background-color: #FAFAFA;
+}
+#maincontrols{
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+}
+.buttoncontrol{
+    color: #FC8E36;
+    display:table-cell;
+    vertical-align:middle;
+    text-align: center;
+    margin:0 auto;
+}
+
+.toggleactive{
+    color: #FC8E36;
+}
+.toggleinactive{
+    color: #DCDCDC;
+}
+.buttoncontrol:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.buttoncontainer{
+    display:table;
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+/*
+* Audio progress
+*/
+#progresstime{
+    color: #FAFAFA;
+    font-size: 20px;
+    padding-top: 3px;
+    margin-left: 10px;
+}
+#audio-progress {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #DCDCDC;
+    overflow: hidden;
+}
+#audio-progress-bar {
+    -webkit-transition: width 200ms linear;
+    -moz-transition: width 200ms linear;
+    -o-transition: width 200ms linear;
+    transition: width 200ms linear;
+    display: block;
+    height: 100%;
+    width: 0%;
+    max-width: 100%;
+    background-color: #FC8E36;
+}
+
+/*
+* Volume
+*/
+#volume-progress {
+    display: block;
+    width: 20%;
+    height: 10px;
+    background-color: #88af05;
+    overflow: hidden;
+}
+#volume-progress-bar {
+    -webkit-transition: width 200ms linear;
+    -moz-transition: width 200ms linear;
+    -o-transition: width 200ms linear;
+    transition: width 200ms linear;
+    display: block;
+    height: 100%;
+    width: 0;
+    max-width: 100%;
+    background-color: #973d10;
+}
+
+/*
+* Playlist
+*/
+#songlist{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+#songlist>li{
+    width: 100%;
+    border-bottom: 2px solid #DCDCDC;
+
+}
+#songlist>li:hover{
+    background-color: #fcac00;
+    cursor: pointer;
+}
+.playlistitem{
+    display: inline-block;
+
+}
+.li-active{
+    background-color:#FC8E36;
+}
+.playlistcover{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    vertical-align:middle;
+}
+.playlisttext{
+    display: inline-block;
+    vertical-align:middle;
+    width: 300px;
+}
+.songname{
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    margin: 0 0 0 10px;
+}
+.artistname{
+    display: block;
+    font-size: 1em;
+    margin: 0 0 0 10px;
+
+}

@@ -1,0 +1,21 @@
+{
+  "name": "mp3_player",
+  "version": "0.0.1",
+  "authors": [
+    "Emmanuel Meinike <emathegreat@gmail.com>"
+  ],
+  "description": "HTML5 Mp4 3 player",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "jdataview": "~2.4.7"
+  }
+}

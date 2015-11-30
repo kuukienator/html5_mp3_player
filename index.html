@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MP3 - Player</title>
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jdataview/dist/browser/jdataview.js"></script>
+    <script type="text/javascript" src="js/id3-minimized.js"></script>
+    <script type="text/javascript" src="js/mp3Player.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/mp3PlayerStyles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="art">
+            <img src="images/cover.png" id="coverArt">
+            <div id="imageOverlay">
+                <div id="imageOverlayText">
+                    <span id="overlaysongname">Bohemian Rhapsody</span>
+                    <span id="overlayartist">Queen</span>
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <span id="audio-progress">
+                <span id="audio-progress-bar"><span id="progresstime">0:00</span></span>
+            </span>
+            <div id="maincontrols">
+                <div class="buttoncontainer"  id="loopomcontainer">
+                    <i id="loop" class="fa fa-repeat fa-lg buttoncontrol toggleactive"></i>
+                </div>
+                <div class="buttoncontainer" id="previouscontainer">
+                    <i id="previous" class="fa fa-step-backward fa-2x buttoncontrol"></i>
+                </div>
+                <div class="buttoncontainer">
+                    <i id="playpause" class="fa fa-play fa-3x buttoncontrol"></i>
+                </div>
+                <div class="buttoncontainer"  id="nextcontainer">
+                    <i id="next" class="fa fa-step-forward fa-2x buttoncontrol"></i>
+                </div>
+                <div class="buttoncontainer"  id="randomcontainer">
+                    <i id="random" class="fa fa-random fa-lg buttoncontrol"></i>
+                </div>
+            </div>
+            <!--
+            <span id="mute" class="fa fa-volume-up fa-lg"></span>
+             <span id="volume-progress">
+                <span id="volume-progress-bar"></span>
+            </span>
+            -->
+        </div>
+    </div>
+</body>
+</html>
